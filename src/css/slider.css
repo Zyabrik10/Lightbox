@@ -1,0 +1,22 @@
+/* .slider{
+    margin: 0 auto;
+    width: 500px;
+    height: 281px;
+
+    outline: 1px solid tomato;
+
+    overflow: hidden;
+
+    display: flex;
+} */
+
+/* .slider > *{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider > * > img{
+    width: 100%;
+    height: 100%;
+} */

@@ -1,0 +1,80 @@
+h1, h2, h3, h4, h5, h6, body, ul, p {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  color: currentColor;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  word-spacing: inherit;
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+.lightbox-modal {
+  background-color: #000c;
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+.lightbox-modal.active {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.lightbox-modal-close-button {
+  --size: 30px;
+  --field-size: calc(var(--size) * 1.5);
+  font-size: var(--size);
+  width: var(--field-size);
+  height: var(--field-size);
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lightbox-modal-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.lightbox-modal-img {
+  width: 640px;
+  height: 427px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=index.3092e1e0.css.map */

@@ -1,0 +1,49 @@
+.lightbox-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0 ,0.8);
+
+    display: none;
+}
+
+.lightbox-modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-modal-close-button{
+    --size: 30px;
+    --field-size: calc(var(--size) * 1.5);
+    
+    font-size: var(--size);
+    
+    width: var(--field-size);
+    height: var(--field-size);
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+
+    background: transparent;
+}
+
+.lightbox-modal-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-modal-img{
+    width: 640px;
+    height: 427px;
+}
