@@ -1,7 +1,2 @@
 @import url("./reset-normolize.css");
-@import url("./slider.css");
 @import url("./modal.css");
-
-*{
-    box-sizing: border-box;
-}

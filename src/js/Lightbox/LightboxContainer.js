@@ -24,21 +24,30 @@ export default class LightboxContainer {
       imageItem = target.querySelector(".lightbox-container-img");
     }
 
-    const largeUrl = imageItem.dataset.largeUrl;
     this.modal.element.classList.add("active");
-    this.modal.element.querySelector(".lightbox-modal-img").src = largeUrl;
 
-    window.addEventListener("keydown", this.modal.windowFunction);
+    const index = imageItem.dataset.index;
+
+    const allImages = Array.from(
+      document.querySelectorAll("a.lightbox-container-item")
+    );
+    this.modal.images = allImages;
+    this.modal.currentIndex = +index;
+
+    this.modal.render(imageItem);
+
+    window.addEventListener("keydown", this.modal.windowKeyDownHandler);
   }
 
   add(imagesData) {
     const images = imagesData
-      .map(({ id, url, largeUrl, description }) => {
+      .map(({ id, url, largeUrl, description }, index) => {
         return SliderItem({
           url,
           largeUrl,
           description,
           id,
+          q: index,
         });
       })
       .join("\n");
